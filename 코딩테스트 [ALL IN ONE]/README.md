@@ -34,7 +34,7 @@
 
 <br/>
 
-- [Queue & Stack](2.%20Queue%20%26%20Stack.md)
+- [Queue & Stack](2.%20Queue,%20Stack.md)
 
 큐 (Queue)
 
