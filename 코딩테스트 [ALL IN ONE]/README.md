@@ -118,6 +118,14 @@ Traversal 3 - 전위 순회 (Preorder), 중위 순회 (Inorder), 후위 순회 (
 
 동적계획법 (4) 총 정리
 
+[코테 적용] 👉 [Min cost climbing stairs] 완전탐색 / DP (전반부)
+
+[코테 적용] 👉 [Min cost climbing stairs] 완전탐색 / DP (후반부)
+
+[코테 적용] 👉 [Unique Paths] 완전탐색 / DP (전반부)
+
+[코테 적용] 👉 [Unique Paths] 완전탐색 / DP (후반부)
+
 힙/우선순위 큐 (Heap / Priority queue)
 
 다익스트라 (Dijkstra)
