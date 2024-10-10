@@ -20,3 +20,10 @@
 - [React Native - 완벽 가이드](React%20Native%20%2D%20완벽%20가이드/README.md)
 - [면접을 위한 CS 전공지식 노트 (도서)](면접을%20위한%20CS%20전공지식%20노트/README.md)
 - [Effective TypeScript (도서)](Effective%20TypeScript/README.md)
+
+## [2024]
+
+- [점프 투 파이썬 (도서)](점프%20투%20파이썬/README.md) - Continue
+- [코딩테스트 [ALL IN ONE]](코딩테스트%20[ALL%20IN%20ONE]/README.md) - Continue
+- [Effective TypeScript (도서)](Effective%20TypeScript/README.md) - Continue
+- [2024년 코테경향성 및 문제풀이](2024년%20코테경향성%20및%20문제풀이/README.md)
