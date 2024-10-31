@@ -28,5 +28,5 @@
 - [Effective TypeScript (도서)](Effective%20TypeScript/README.md) - Continue
 - [2024년 코테경향성 및 문제풀이](2024년%20코테경향성%20및%20문제풀이/README.md)
 - [스토리북, 테스트와 함께 하는 컴포넌트 주도 프론트엔드 개발](스토리북,%20테스트와%20함께%20하는%20컴포넌트%20주도%20프론트엔드%20개발/README.md)
-- [javascript-algorithms](javascript%2Dalgorithms.README.md)
-- [python-algorithms](python%2Dalgorithms.README.md)
+- [javascript-algorithms](javascript%2Dalgorithms/README.md)
+- [python-algorithms](python%2Dalgorithms/README.md)
