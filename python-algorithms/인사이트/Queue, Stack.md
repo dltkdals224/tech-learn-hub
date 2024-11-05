@@ -1,8 +1,5 @@
 # 큐, 스택
 
-해시에 관한 내용이 아닌, 해시와 관련된 내용을 풀다가 깨닳은 내용을 정리. <br/>
-따라서 인사이트 폴더의 글을 읽는 경우는 모든 파일의 내용을 훑어야 할 필요가 있음.
-
 ## 프로그래머스
 
 ### [프로세스](https://school.programmers.co.kr/learn/courses/30/lessons/42587)
@@ -47,11 +44,17 @@ priorities가 [1, 2, 3, 4, 5]일 때를 생각해보면 이해할 수 있다.
 ```python
 from collections import deque
 
+## 하나의 값으로 설정
 list = [0] * len(parameter)
 queue = deque([0] * len(parameter)) # 동일
-```
 
-#### 동작 원리
+## 임의의 값으로 간격을 두는 설정
+n = 10 # 리스트의 길이
+start = 1 # 시작 값
+step = 2 # 차이
+arithmetic_seq_by_comprehension = [start + i * step for i in range(n)]
+arithmetic_seq_by_map = list(map(lambda x: start + x * step, range(n)))
+```
 
 > 배열 뒤집기
 
@@ -62,7 +65,7 @@ reverse
 reversed
 - list 원본의 변경 없이 할당으로 사용 (추가 메모리를 사용)
 
-모두 외우는게 귀찮다면 그냥 sorted만 사용하는게 문제가 생길 상황이 적다.
+모두 외우는게 귀찮다면 그냥 reversed만 사용하는게 문제가 생길 상황이 적다.
 ex) reversed_list = reversed(original_list)
 ```
 

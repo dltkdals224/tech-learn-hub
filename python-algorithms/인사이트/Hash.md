@@ -47,8 +47,6 @@ dic.setdefault(key, []).append(item)
 dic[key] = dic.get(key, 0) + 1
 ```
 
-#### 동작원리
-
 > dictionary 인자 추출 3종
 
 ```python
@@ -94,8 +92,6 @@ ex)
 ```python
 for index, value in enumerate(list):
 ```
-
-#### 동작원리
 
 > sort와 sorted의 차이
 
