@@ -3,6 +3,7 @@
 ### abs(x)
 
 abs(x)는 어떤 숫자를 입력받았을 때, 그 숫자의 절댓값을 반환하는 함수.
+
 ```python
 abs(3) # 3
 abs(-3) # 3
@@ -24,7 +25,7 @@ all([[]]) # False
 
 <br/>
 
-### any (iterable)
+### any(iterable)
 
 반복 가능한(iterable) 데이터를 입력으로 받아 하나라도 참이 있으면 True를, 모두 거짓일 때 False를 반환한다.
 
@@ -64,6 +65,11 @@ divmod(a, b)는 2개의 숫자를 입력으로 받는다. 그리고 a를 b로 �
 몫을 구하는 연산자 //와 나머지를 구하는 연산자 %를 각각 사용한 결과로 구성된 것.
 
 ```python
+result = divmod(17, 5)
+print(result)  # (3, 2)
+
+quotient, remainder = divmod(20, 3)
+print(f"몫: {quotient}, 나머지: {remainder}")  # 몫: 6, 나머지: 2
 ```
 
 <br/>
@@ -147,6 +153,8 @@ print(hasattr(person1, 'name'))    # True
 print(hasattr(person1, 'address')) # False
 ```
 
+<br/>
+
 ### hex(x)
 
 hex(x)는 정수를 입력받아 16진수(hexadecimal) 문자열로 변환하여 반환하는 함수이다.
@@ -155,13 +163,6 @@ hex(x)는 정수를 입력받아 16진수(hexadecimal) 문자열로 변환하여
 hex(234) # '0xea'
 hex(3) # '0x3'
 ```
-
-<br/>
-
-### id(object)
-
-id(object)는 객체를 입력받아 객체의 고유 주소 값(레퍼런스)을 반환하는 함수이다. <br/>
-이것은 객체의 수명 동안 유일하고 바뀌지 않음이 보장되는 정수.
 
 <br/>
 
