@@ -93,15 +93,17 @@ print(result)   # [[0, 1], [1, 2], [2, 3], [2, 3], [3, 4]]
 from collections import deque
 
 ## 하나의 값으로 설정
-list = [0] * len(parameter)
+list = [0] * len(parameter) # [0, 0, 0, 0, 0]
+list2 = [[0] * 2 for _ in range(5)] # [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+
 queue = deque([0] * len(parameter)) # 동일
 
 ## 임의의 값으로 간격을 두는 설정
 n = 10 # 리스트의 길이
 start = 1 # 시작 값
 step = 2 # 차이
-arithmetic_seq_by_comprehension = [start + i * step for i in range(n)]
-arithmetic_seq_by_map = list(map(lambda x: start + x * step, range(n)))
+seq_by_comprehension = [start + i * step for i in range(n)] # 'A for i in B' 구조가 중요
+seq_by_map = list(map(lambda x: start + x * step, range(n)))
 ```
 
 <br/>
