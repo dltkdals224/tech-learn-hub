@@ -30,3 +30,4 @@
 - [스토리북, 테스트와 함께 하는 컴포넌트 주도 프론트엔드 개발](스토리북,%20테스트와%20함께%20하는%20컴포넌트%20주도%20프론트엔드%20개발/README.md)
 - [javascript-algorithms](javascript%2Dalgorithms/README.md)
 - [python-algorithms](python%2Dalgorithms/README.md)
+- [파이썬과 Chat-GPT를 이용한 금융 AI 활용](파이썬과%20Chat%2DGPT를%20이용한%20금융%20AI%20활용/README.md)
