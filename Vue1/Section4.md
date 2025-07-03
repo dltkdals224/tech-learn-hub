@@ -21,12 +21,11 @@ app.component('컴포넌트 이름', {
 ## Vue Component 등록과 표시
 
 ```html
-<!-- html -->
+<!-- component.html -->
 <div id="app">
     <app-header></app-header>
 </div>
 
-<!-- javascript -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     Vue.createApp({
@@ -61,6 +60,7 @@ Vue의 공식 스타일 가이드에서도 HTML에서는 항상 kebab-case를 �
 프롭스 속성을 기억할 때는 상위 컴포넌트에서 하위 컴포넌트로 내려보내는 데이터 속성으로 기억.
 
 ```html
+<!-- props.html -->
 <div id="app">
   <app-header v-bind:title="appTitle"></app-header>
 </div>
@@ -88,6 +88,7 @@ Vue의 공식 스타일 가이드에서도 HTML에서는 항상 kebab-case를 �
 ## Event Emit 소개 / Event Emit 구현
 
 ```html
+<!-- event-emit.html -->
 <div id="app">
   <p>갱신 횟수: {{ refreshCount }}</p>
   <app-contents @refresh="handleRefresh"></app-contents>
@@ -136,6 +137,7 @@ Vue의 공식 스타일 가이드에서도 HTML에서는 항상 kebab-case를 �
 하위로 컴포넌트의 깊이가 깊어질 수록 문제를 마주할 가능성이 높아진다.
 
 ```html
+<!-- same-component-level.html -->
 <div id="app">
   <!-- view 내부적으로 kebab-case로 처리 필요 (=appTitle과 연결) -->
   <app-header :app-title="message"></app-header> <!-- props -->
