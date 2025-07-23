@@ -72,11 +72,11 @@
 
 - 프로젝트 생성 및 로그인 폼 UI 구성
 - 폼 이벤트 제어 및 서버로 데이터 전송
-- Vue Coomposition API 코드로 변환하기
+- Vue Composition API 코드로 변환하기
 
 <br/>
 
-> [마무리](Section9.md)
+> 마무리
 
 - 강의 내용 정리 및 학습 자료 안내
 
