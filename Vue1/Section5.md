@@ -68,7 +68,7 @@
       return {
         textClass: "primary",
         sectionId: "tab",
-        sectionStyle: { color: "red" },
+        sectionStyle: { color: "blue" },
       };
     },
   }).mount("#app");

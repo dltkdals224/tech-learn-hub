@@ -54,8 +54,8 @@ mobile
 - iOS 시뮬레이터 <- 맥북만 가능
 - ~~브라우저(크롬, 사파리)~~ <- 앱 수준의 테스트를 수행할 수 없음
 
-수업: Android Emulator 기준    
-개인: iOS device + Android Emulator
+수업: Android Emulator 기준  
+개인: iOS device + Android device
 
 > 디바이스 세팅
 
@@ -68,7 +68,10 @@ mobile
 - 생성된 기본 프로젝트에서 `npx expo start`명령어 실행
 - 실행 후, 추가 키 입력에 따라 적절한 디바이스에 화면 출력 가능
 
-주의 사항: 모바일 디바이스를 QR code로 연결하는 상황에서, 동일한 wifi 연결이 필요.
+> 주의 사항
+
+- 모바일 디바이스를 QR code로 연결하는 상황에서, 동일한 wifi 연결이 필요
+- iOS는 Expo Go 앱을 설치한 이후에 카메라를 통한 QR 추적 가능
 
 > 실습
 
@@ -96,14 +99,49 @@ import { StatusBar } from "expo-status-bar"
 </SafeAreaView>
 ```
 
-모바일 폴더에서 components/ 하위에 section별로 분리하며 수업을 진행
+모바일 폴더에서 components/ 하위에 section별로 분리하며 수업을 진행.  
+이후의 내용은 해당 테스트 필드에서 직접 작성.
 
 <br/>
 
 ## 웹뷰
+
+하이브리드 앱의 구성을 위해서 `<WebView>`컴포넌트를 통해 Next 프로젝트를 감싼다.
+
+`<WebView>`는 `npm install` 또는 `yarn add`가 아닌 `npx expo install`을 통해 다운받아야 한다.  
+해당 프로젝트의 expo version dependencies에 맞춰서 다운받아야 하기 때문.  
+따라서 `npx expo install react-native-webview`를 입력한다.
+
+```typescript
+import { SafeAreaView } from "react-native-safe-area-context";
+import { WebView } from "react-native-webview";
+
+const Section01_03 = () => {
+  return (
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: "white" }}
+      edges={["top", "bottom"]}
+    >
+      <WebView source={{ uri: "https://www.naver.com" }} />;
+    </SafeAreaView>
+  );
+};
+
+export default Section01_03;
+```
+
+- naver는 safety-area에 대해서 natvie로 처리.  
+top: reload by scroll, bottom: navigation
+
 <br/>
 
 ## 웹뷰와 Next 연동
+
+> 주의사항
+
+nextjs도 로컬에서 가동
+모방리 기기에서는 localhost 추적 불가하여 wifi 기준의 ip주소 맞추기 작업 필요ㅣㅇ
+
 <br/>
 
 ## 웹뷰 연결 실패
