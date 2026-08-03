@@ -39,7 +39,7 @@ EC2 인스턴스는 **두 가지 IP 주소**를 동시에 가질 수 있다.
 - SSH 접속 시 기본적으로는 **public IP만** 사용 가능 (외부에서 같은 VPC가 아니므로 private IP로 바로 접근 불가)  
    ⚠️ VPC(Virtual Private Cloud): 독립된 가상 네트워크 공간
 - 인스턴스를 중지(stop) 후 재시작(start)하면 public IP가 변경됨  
-  ⚠️ Elastic IP를 통해 Public IPv4 주소를 고정 가능 (비권장)
+   ⚠️ Elastic IP를 통해 Public IPv4 주소를 고정 가능 (비권장)
 
 ---
 
